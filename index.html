@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +15,13 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- /css -->
 </head>
+
 <body>
     <!-- #app -->
-    <div id="app">
+    <div id="app" v-cloak>
         <h2>Email List</h2>
         <ul>
-            <li v-for="email in emailList">
+            <li v-show="emailList.length === emailNumber" v-for="email in emailList">
                 {{ email }}
             </li>
         </ul>
@@ -35,4 +37,5 @@
     <script src="js/main.js"></script>
     <!-- /js -->
 </body>
+
 </html>

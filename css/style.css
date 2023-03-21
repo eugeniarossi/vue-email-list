@@ -1,0 +1,45 @@
+/**************
+RESET
+**************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**************
+MAIN
+**************/
+
+body {
+    background-color: rgb(16, 27, 33);
+    color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5625rem;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    padding: .5rem 1.5625rem;
+    background-color: rgb(11, 18, 22);
+    border-radius: .3125rem;
+    margin: .625rem;
+}
+
+li:hover {
+    transform: scale(1.05);
+    outline: .125rem solid rgb(39, 81, 108);
+}
